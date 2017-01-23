@@ -14,8 +14,6 @@ public class CrearTablas {
         Statement stmt = null;
 
         try {
-            //Class.forName("org.sqlite.JDBC");
-            //c = DriverManager.getConnection("jdbc:sqlite:movies.db");
             Class.forName("org.postgresql.Driver");
             c = DriverManager.getConnection("jdbc:postgresql://172.31.73.167:5432/postgres","taha", "taha");
 
@@ -23,12 +21,12 @@ public class CrearTablas {
 
             stmt = c.createStatement();
             String sql = "CREATE TABLE Llibres " +
-                    "(ID INT PRIMARY KEY     NOT NULL," +
+                    "(ID INT NOT NULL," +
                     " TITOL CHAR(50) PRIMARY KEY NOT NULL," +
                     " NOMBRE_DEXEMPLARS INT NOT NULL," +
                     " EDITORIAL CHAR(50) NOT NULL," +
                     " NOMBRE_PAGINES INT NOT NULL," +
-                    " ANY_DEDICIO INT NOT NULL");
+                    " ANY_DEDICIO INT NOT NULL)";
 
             String sql2 = "CREATE TABLE SOCIS " +
                     "(ID INT PRIMARY KEY     NOT NULL," +
