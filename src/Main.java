@@ -4,9 +4,8 @@
 public class Main {
 
     public static void main(String[] args) {
-        CrearTablas crearTablas = new CrearTablas();
-
-        crearTablas.crearTablas();
+        //CrearTablas crearTablas = new CrearTablas();
+        //crearTablas.crearTablas();
     }
 
 

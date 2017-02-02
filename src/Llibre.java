@@ -13,7 +13,6 @@ public class Llibre {
     public Llibre(){}
 
     public Llibre(String titol, int nombreDexemplars, String editorial, int nombrePagines, String anyDedicio) {
-
         this.titol = titol;
         this.nombreDexemplars = nombreDexemplars;
         this.editorial = editorial;
